@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
  *
  */
 
-public class Tip2 extends BaseTestClass {
+public class Tip6VerifyPageAccessForRoles extends BaseTestClass {
 
 
     @Test
@@ -27,6 +27,7 @@ public class Tip2 extends BaseTestClass {
 
     // based on some requirements sometimes you want to make sure an element is not displayed
 
+    // need to change this since element is passed -- and if not found it will give an error before!!!!
 
     void verifyElementIsNotDisplayed(WebElement element){
 

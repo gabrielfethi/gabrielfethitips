@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Tip1 extends BaseTestClass {
+public class Tip13GetConsoleErrorsOnPage extends BaseTestClass {
 
 
     @Test(description = "Verify the Total of the Listed TableData")
