@@ -9,5 +9,8 @@
         <module name="GabeTipsPrep" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gabrielfethitips" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>

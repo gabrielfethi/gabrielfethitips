@@ -21,18 +21,18 @@ public class XLUtils {
 
     public static Object[][] getExcelData(String sheetLabel, String path) throws IOException {
 
-        int rownum = XLUtils.getRowCount(path, sheetLabel);
-        int colcount = XLUtils.getCellCount(path, sheetLabel, 1);
+        int rowCount = XLUtils.getRowCount(path, sheetLabel);
+        int colCount = XLUtils.getCellCount(path, sheetLabel, 1);
 
-        String empdata[][] = new String[rownum][colcount];
+        String exceldata[][] = new String[rowCount][colCount];
 
-        for (int i = 1; i <= rownum; i++) {
-            for (int j = 0; j < colcount; j++) {
-                empdata[i - 1][j] = XLUtils.getCellData(path, sheetLabel, i, j);
+        for (int i = 1; i <= rowCount; i++) {
+            for (int j = 0; j < colCount; j++) {
+                exceldata[i - 1][j] = XLUtils.getCellData(path, sheetLabel, i, j);
             }
         }
 
-        return (empdata);
+        return (exceldata);
 
     }
 
